@@ -66,9 +66,9 @@
 switch (ENVIRONMENT)
 {
 	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
+    error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);
+    ini_set('display_errors', 1);
+break;
 
 	case 'testing':
 	case 'production':
@@ -114,7 +114,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = dirname(__FILE__) . '/application';
+	$application_folder = dirname(__FILE__) . '/application';git add index.php
 /*
  *---------------------------------------------------------------
  * VIEW DIRECTORY NAME
