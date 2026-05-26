@@ -1,0 +1,38 @@
+:root {
+    --primary: #007BFF;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --dark: #212529;
+    --light: #f8f9fa;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#camera-preview {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 10px;
+}
